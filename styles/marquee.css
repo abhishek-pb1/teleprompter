@@ -1,0 +1,43 @@
+.screen {
+  min-height: 100vh;
+  position: relative;
+}
+
+.marquee {
+  position: relative;
+  /* margin-top: 2rem; */
+  display: grid;
+  place-content: center;
+  /* overflow: hidden; */
+  min-height: 100vh;
+}
+
+.marquee-content {
+  position: absolute;
+  font-size: 3rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+/* Animation */
+.scrolling-animation {
+  animation-name: scrollAnimation;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: infinite; */
+  animation-play-state: paused;
+}
+
+.marquee-content:focus {
+  outline: none;
+}
+
+/* --------------- */
+/* ANIMATIONS */
+@keyframes scrollAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
