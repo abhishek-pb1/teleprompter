@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Teleprompter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <section class="screen">
+      <!-- Teleprompter -->
+      <div class="container marquee">
+        <div class="marquee-content" contenteditable="true">
+          Enter your script here (You can Edit this text)
+        </div>
+      </div>
+
+      <!-- Control Panel -->
+      <div class="control-panel">
+        <div class="container">
+          <button class="btn" id="startBtn">start</button>
+          <button class="btn" id="pauseBtn">pause</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
