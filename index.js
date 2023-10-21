@@ -29,10 +29,9 @@ content.addEventListener("click", () => {
 });
 
 // On Animation end -> reset to initial state but pause the animation
+const scrollingAnimation = document.querySelector(".scrolling-animation");
 content.addEventListener("animationend", () => {
-  content.style.animationPlayState = "paused";
-  content.style.animationName = "none";
-  setTimeout(() => {
-    content.style.animationName = "scrollAnimation";
-  }, 500); // 500 milliseconds
+  content.classList.remove("scrolling-animation");
+  void content.offsetWidth;
+  content.classList.add("scrolling-animation");
 });

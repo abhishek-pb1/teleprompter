@@ -75,8 +75,9 @@ a:visited {
   font-size: 3rem;
   padding: 2rem;
   width: 100%;
-
-  /* Animation */
+}
+/* Animation */
+.scrolling-animation {
   animation-name: scrollAnimation;
   animation-duration: 3s;
   animation-timing-function: linear;
